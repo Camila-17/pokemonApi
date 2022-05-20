@@ -1,16 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import Name from './components/Name';
-import { useState } from 'react';
+import Main from './components/Main';
+import './components/Style.css'
 
 function App() {
-  const[count, setCount] = useState(null)
   
   return (
-    <div className="App">
-      <header className="App-header">
-        <Name/>
-      </header>
+    <div>
+      <Main/>
     </div>
   );
 }
