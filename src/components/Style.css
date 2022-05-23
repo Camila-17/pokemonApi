@@ -24,7 +24,7 @@ body{
 .left-content{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
-    grid-gap: 5rem;
+    grid-gap: 6rem;
     
 }
 
@@ -49,7 +49,7 @@ body{
     text-align: center;
     color: rgb(233, 242, 248);
     position: fixed;
-    top: 100px;
+    top: 290px;
     right: 10px;
 }
 
@@ -104,3 +104,40 @@ body{
     background-color: rgb(107, 245, 245);
     border-radius: 8px;
 }
+
+
+
+.CardInfo{
+    width: 450px;
+    background-color: rgb(58, 121, 121);
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgb(82, 48, 48);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.nomData{
+    width: 450px;
+    background-color: rgb(58, 121, 121);
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgb(82, 48, 48);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 1rem;
+   
+}
+
+
+
+
+
+
