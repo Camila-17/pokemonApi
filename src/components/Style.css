@@ -3,11 +3,12 @@
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    
 
 }
 
 body{
-    background-color: rgb(26, 0, 156) ;
+    background-color: rgb(102, 81, 169) ;
 
 }
 
@@ -25,14 +26,15 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
     grid-gap: 6rem;
+    text-shadow: 0 0 30px rgb(47, 33, 245);
     
 }
 
 .card{
     width: 350px;
-    background-color: rgb(236, 240, 240);
+    background-color: rgb(231, 231, 251);
     border-radius: 1rem;
-    box-shadow: 0 5px 5px rgb(82, 48, 48);
+    box-shadow: 0 5px 5px rgb(0, 0, 0);
     padding: 0 1.5rem;
     display: flex;
     align-items: center;
@@ -47,10 +49,10 @@ body{
 .right-content{
     width: 50%;
     text-align: center;
-    color: rgb(233, 242, 248);
+    color: rgb(0, 0, 0);
     position: fixed;
-    top: 290px;
-    right: 10px;
+    top: 250px;
+    right: 100px;
 }
 
 .right-content img{
@@ -58,14 +60,17 @@ body{
     height: 190px;
 }
 
+
 .right-content h1{
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
+    
 }
 
 .abilities{
     width: 30%;
+    height: 100px;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -74,67 +79,103 @@ body{
 }
 
 .abilities .group{
-    background-color: rgb(45, 239, 246);
-    color: black;
-    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 190px;
+    background-color: rgb(1, 1, 1);
+    color: rgb(255, 255, 255);
+    padding: 0.2rem;
     font-size: 12px;
-    border-radius: 8px;
+    border-radius: 5px;
+    letter-spacing: 5px;
+
 
 }
 
 .base-state{
-    margin-top: 2rem;
+    margin-top: 1rem;
 
 }
 
 .btn-group{
     display: flex;
-
 }
 
 .btn-group button{
     outline: none;
     border: none;
-    width: 150px;
+    width: 250px;
     padding: 0.3rem 0;
     margin: 1rem;
     font-size: 17px;
     font-weight: bold;
-    color: rgb(0, 0, 0);
-    background-color: rgb(107, 245, 245);
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     border-radius: 8px;
 }
 
-
-
-.CardInfo{
-    width: 450px;
-    background-color: rgb(58, 121, 121);
-    border-radius: 1rem;
-    box-shadow: 0 5px 5px rgb(82, 48, 48);
-    padding: 0 1.5rem;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    margin: auto;
-    justify-content: space-around;
-    margin-top: 1rem;
+.uno{
+    position: relative;
 }
 
-.nomData{
-    width: 450px;
-    background-color: rgb(58, 121, 121);
+.uno div{
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.uno .nomCard{
+    background-color: rgba(246, 225, 255, 0.97);
+    width: 420px;
     border-radius: 1rem;
-    box-shadow: 0 5px 5px rgb(82, 48, 48);
+    box-shadow: 0 5px 5px rgb(0, 0, 0);
     padding: 0 1.5rem;
     display: flex;
     align-items: center;
     box-sizing: border-box;
     margin: auto;
     justify-content: space-around;
-    margin-top: 1rem;
+    transform: perspective(500px) rotateX(0deg);
    
 }
+
+.uno .infoCard{
+    top: 250px;
+    background-color: rgb(190, 164, 250);
+    width: 420px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgb(72, 71, 71);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: auto;
+    justify-content: space-around;
+    transform: perspective(500px) rotateX(180deg);
+    
+}
+
+
+.uno:hover .nomCard {
+    transform: perspective(500px) rotateX(180deg);
+   
+}
+
+.uno:hover .infoCard {
+    transform: perspective(500px) rotateX(360deg);
+   
+}
+
+.title{
+    text-align: center;
+    font-size: 80px;
+    margin-top: 20px;
+    letter-spacing: 10px;
+    text-shadow: -5px 5px #f1e4f9;
+}
+
+
+
 
 
 

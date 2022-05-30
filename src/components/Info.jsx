@@ -3,7 +3,7 @@ import React from 'react'
 export const Info = ({ data }) => {
     console.log(data)
     return (
-        <div className="">
+        <div>
             {
                 (!data) ? "" : (
                     <>
